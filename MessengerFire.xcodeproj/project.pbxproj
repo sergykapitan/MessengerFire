@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52D338B18ACD27D125362AA0 /* Pods_MessengerFire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CB2D5AFB0536E06E32941D0 /* Pods_MessengerFire.framework */; };
 		8C4A212B2549805000E84C37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4A212A2549805000E84C37 /* AppDelegate.swift */; };
 		8C4A212D2549805000E84C37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4A212C2549805000E84C37 /* SceneDelegate.swift */; };
 		8C4A212F2549805000E84C37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4A212E2549805000E84C37 /* ViewController.swift */; };
@@ -15,11 +14,12 @@
 		8C4A21342549805100E84C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4A21332549805100E84C37 /* Assets.xcassets */; };
 		8C4A21372549805100E84C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4A21352549805100E84C37 /* LaunchScreen.storyboard */; };
 		8C4A21402549815800E84C37 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C4A213F2549815800E84C37 /* GoogleService-Info.plist */; };
+		96B73EAF3B28AA8601074450 /* libPods-MessengerFire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540B5FBF911D202FBEC02619 /* libPods-MessengerFire.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3CB2D5AFB0536E06E32941D0 /* Pods_MessengerFire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MessengerFire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AED6E819D85A43E5CF3CCF3 /* Pods-MessengerFire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessengerFire.release.xcconfig"; path = "Target Support Files/Pods-MessengerFire/Pods-MessengerFire.release.xcconfig"; sourceTree = "<group>"; };
+		540B5FBF911D202FBEC02619 /* libPods-MessengerFire.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MessengerFire.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4A21272549805000E84C37 /* MessengerFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C4A212A2549805000E84C37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C4A212C2549805000E84C37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52D338B18ACD27D125362AA0 /* Pods_MessengerFire.framework in Frameworks */,
+				96B73EAF3B28AA8601074450 /* libPods-MessengerFire.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,7 +47,7 @@
 		0ACED1F8B223D0652C4D8C00 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3CB2D5AFB0536E06E32941D0 /* Pods_MessengerFire.framework */,
+				540B5FBF911D202FBEC02619 /* libPods-MessengerFire.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,7 +106,6 @@
 				8C4A21232549805000E84C37 /* Sources */,
 				8C4A21242549805000E84C37 /* Frameworks */,
 				8C4A21252549805000E84C37 /* Resources */,
-				CF6B8C0067B5791068F2D1D2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -184,23 +183,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CF6B8C0067B5791068F2D1D2 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MessengerFire/Pods-MessengerFire-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MessengerFire/Pods-MessengerFire-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MessengerFire/Pods-MessengerFire-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
