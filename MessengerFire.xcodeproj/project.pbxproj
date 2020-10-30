@@ -58,7 +58,6 @@
 				997C93E996896A00385E01D9 /* Pods-MessengerFire.debug.xcconfig */,
 				4AED6E819D85A43E5CF3CCF3 /* Pods-MessengerFire.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,16 +82,40 @@
 		8C4A21292549805000E84C37 /* MessengerFire */ = {
 			isa = PBXGroup;
 			children = (
-				8C4A212A2549805000E84C37 /* AppDelegate.swift */,
+				8CAF8BEC254CA6CE0032DAEE /* App */,
 				8C4A212C2549805000E84C37 /* SceneDelegate.swift */,
 				8C4A212E2549805000E84C37 /* ViewController.swift */,
 				8C4A21302549805000E84C37 /* Main.storyboard */,
-				8C4A21332549805100E84C37 /* Assets.xcassets */,
-				8C4A21352549805100E84C37 /* LaunchScreen.storyboard */,
-				8C4A21382549805100E84C37 /* Info.plist */,
+				8CAF8BED254CA7030032DAEE /* Assets */,
+				8CAF8BF0254CA95D0032DAEE /* LaunchScreen */,
 				8C4A213F2549815800E84C37 /* GoogleService-Info.plist */,
 			);
 			path = MessengerFire;
+			sourceTree = "<group>";
+		};
+		8CAF8BEC254CA6CE0032DAEE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8C4A212A2549805000E84C37 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8CAF8BED254CA7030032DAEE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				8C4A21332549805100E84C37 /* Assets.xcassets */,
+				8C4A21382549805100E84C37 /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		8CAF8BF0254CA95D0032DAEE /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8C4A21352549805100E84C37 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,7 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48BAMVNW77;
-				INFOPLIST_FILE = MessengerFire/Info.plist;
+				INFOPLIST_FILE = MessengerFire/Assets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -364,7 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48BAMVNW77;
-				INFOPLIST_FILE = MessengerFire/Info.plist;
+				INFOPLIST_FILE = MessengerFire/Assets/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
