@@ -13,6 +13,9 @@
 		8C4A21342549805100E84C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C4A21332549805100E84C37 /* Assets.xcassets */; };
 		8C4A21372549805100E84C37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C4A21352549805100E84C37 /* LaunchScreen.storyboard */; };
 		8C4A21402549815800E84C37 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C4A213F2549815800E84C37 /* GoogleService-Info.plist */; };
+		8C62FC8F254D915A001A4AB2 /* MessengerCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C62FC8E254D915A001A4AB2 /* MessengerCodeCell.swift */; };
+		8C62FC94254D93E4001A4AB2 /* MessengerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C62FC93254D93E4001A4AB2 /* MessengerViewModel.swift */; };
+		8C62FC9C254D95B3001A4AB2 /* Constrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C62FC9B254D95B3001A4AB2 /* Constrate.swift */; };
 		96B73EAF3B28AA8601074450 /* libPods-MessengerFire.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 540B5FBF911D202FBEC02619 /* libPods-MessengerFire.a */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		8C4A21362549805100E84C37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C4A21382549805100E84C37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C4A213F2549815800E84C37 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8C62FC8E254D915A001A4AB2 /* MessengerCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerCodeCell.swift; sourceTree = "<group>"; };
+		8C62FC93254D93E4001A4AB2 /* MessengerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerViewModel.swift; sourceTree = "<group>"; };
+		8C62FC9B254D95B3001A4AB2 /* Constrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constrate.swift; sourceTree = "<group>"; };
 		997C93E996896A00385E01D9 /* Pods-MessengerFire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MessengerFire.debug.xcconfig"; path = "Target Support Files/Pods-MessengerFire/Pods-MessengerFire.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,12 +87,38 @@
 			isa = PBXGroup;
 			children = (
 				8CAF8BEC254CA6CE0032DAEE /* App */,
-				8C4A212E2549805000E84C37 /* ViewController.swift */,
+				8C62FC96254D93ED001A4AB2 /* Model */,
+				8C62FC8C254D90E7001A4AB2 /* View */,
 				8CAF8BED254CA7030032DAEE /* Assets */,
 				8CAF8BF0254CA95D0032DAEE /* LaunchScreen */,
-				8C4A213F2549815800E84C37 /* GoogleService-Info.plist */,
 			);
 			path = MessengerFire;
+			sourceTree = "<group>";
+		};
+		8C62FC8C254D90E7001A4AB2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C4A212E2549805000E84C37 /* ViewController.swift */,
+				8C62FC99254D9595001A4AB2 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C62FC96254D93ED001A4AB2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C62FC93254D93E4001A4AB2 /* MessengerViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C62FC99254D9595001A4AB2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8C62FC8E254D915A001A4AB2 /* MessengerCodeCell.swift */,
+				8C62FC9B254D95B3001A4AB2 /* Constrate.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		8CAF8BEC254CA6CE0032DAEE /* App */ = {
@@ -103,6 +135,7 @@
 			children = (
 				8C4A21332549805100E84C37 /* Assets.xcassets */,
 				8C4A21382549805100E84C37 /* Info.plist */,
+				8C4A213F2549815800E84C37 /* GoogleService-Info.plist */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -211,9 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C62FC94254D93E4001A4AB2 /* MessengerViewModel.swift in Sources */,
 				8C4A212F2549805000E84C37 /* ViewController.swift in Sources */,
 				8C4A212B2549805000E84C37 /* AppDelegate.swift in Sources */,
+				8C62FC8F254D915A001A4AB2 /* MessengerCodeCell.swift in Sources */,
 				8C4A212D2549805000E84C37 /* SceneDelegate.swift in Sources */,
+				8C62FC9C254D95B3001A4AB2 /* Constrate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

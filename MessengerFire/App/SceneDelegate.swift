@@ -26,10 +26,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             //   self.window = UIWindow(frame: UIScreen.main.bounds)
                    
                // Set this scene's window's background color.
-               self.window!.backgroundColor = UIColor.red
-               
+             //  self.window!.backgroundColor = UIColor.red
+       // self.window.
                // Create a ViewController object and set it as the scene's window's root view controller.
                self.window!.rootViewController = ViewController()
+            
                
                // Make this scene's window be visible.
                self.window!.makeKeyAndVisible()
