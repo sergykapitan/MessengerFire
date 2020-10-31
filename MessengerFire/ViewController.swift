@@ -15,11 +15,12 @@ class ViewController: UIViewController  {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
-        let displayWidth: CGFloat = self.view.frame.width
-        let displayHeight: CGFloat = self.view.frame.height
+       // let barHeight: CGFloat = UIApplication.shared.statusBarFrame.size.height
+        let displayWidth: CGFloat = self.view.bounds.width
+        let displayHeight: CGFloat = self.view.bounds.height
 
-                myTableView = UITableView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: displayHeight - barHeight))
+//myTableView = UITableView(frame: CGRect(x: 0, y: barHeight, width: displayWidth, height: displayHeight - barHeight))
+                myTableView = UITableView(frame: CGRect(x: 0, y: 0, width: displayWidth, height: displayHeight))
                 myTableView.register(UITableViewCell.self, forCellReuseIdentifier: "MyCell")
                 myTableView.dataSource = self
                 myTableView.delegate = self
